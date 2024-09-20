@@ -1,19 +1,15 @@
 import './App.css';
+import { LeftPanel } from './components/leftPanel/LeftPanel';
+import { RightPanel } from './components/rightPanel/RightPanel';
+
+
+
 
 function App() {
   return (
     <div className="App">
-        <div>
-          <div>
-            <h1>E-commerce App</h1>
-          </div>
-          <div>Filter Section</div>
-          <div>Product Grid</div>
-        </div>
-        <div>
-          <h1>Cart</h1>
-          <button>Checkout</button>
-        </div>
+       <LeftPanel />
+        <RightPanel />
     </div>
   );
 }
