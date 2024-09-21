@@ -1,12 +1,12 @@
-import logo from '../../logo.svg'
+//import logo from '../../logo.svg'
 
-const ProductCard = ({product}) => {
+const ProductCard = ({productImage,productName, productPrice}) => {
  
   return (
     <div>
-        <img src={logo} alt="Product Image" width="300px" />
-        <h1>{product.name}</h1>
-        <p>{`$${product.price}`}</p>
+        <img src={productImage} alt="product" width="300px" />
+        <h1>{productName}</h1>
+        <p>{`$${productPrice}`}</p>
         <button>Add to Cart</button>
      </div>
   )
