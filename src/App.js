@@ -1,16 +1,15 @@
-import './App.css';
-import { LeftPanel } from './components/leftPanel/LeftPanel';
-import { RightPanel } from './components/rightPanel/RightPanel';
-
-
-
+//import { LeftPanel } from "./components/leftPanel/LeftPanel";
+import { LeftPanel } from "./components/LeftPanel/LeftPanel";
+import { RightPanel } from "./components/rightPanel/RightPanel";
 
 function App() {
   return (
-    <div className="App">
-       <LeftPanel />
+    <div className="bg-gray-200 flex flex-row">
+        <LeftPanel />
         <RightPanel />
     </div>
+    
+
   );
 }
 

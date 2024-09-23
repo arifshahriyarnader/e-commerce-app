@@ -1,5 +1,6 @@
 import ProductGrid from "../product/ProductGrid"
 import { FilterSection } from "./FilterSection"
+import { LeftPanelHeader } from "./LeftPanelHeader";
 
 export const LeftPanel=() =>{
   const products = [
@@ -67,11 +68,10 @@ export const LeftPanel=() =>{
       categories: ['Peripherals', 'Printers'],
     },
   ];
+  const headerTitle="React E-Commerce App"
     return (
       <div>
-      <div>
-        <h1>E-commerce App</h1>
-      </div>
+       <LeftPanelHeader title={headerTitle} />
       <FilterSection />
       <ProductGrid products={products} />
     </div>
