@@ -7,9 +7,14 @@ const ProductCard = ({productImage,productName, productPrice}) => {
        <h1 className="text-lg font-semibold">{productName}</h1>
        <p>{`$${productPrice}`}</p>
        </div>
-        <button className="bg-blue-500 hover:bg-blue-700
+       <div className="flex justify-between">
+          <button className="bg-blue-500 hover:bg-blue-700
+         text-white font-bold py-2 px-2
+          rounded mt-2">Share</button>
+           <button className="bg-blue-500 hover:bg-blue-700
          text-white font-bold py-2 px-2
           rounded mt-2">Add to Cart</button>
+          </div>
      </div>
   )
 }
