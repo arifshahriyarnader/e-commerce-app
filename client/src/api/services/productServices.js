@@ -1,6 +1,5 @@
-
-export const useProduct = () => {
-    const products = [
+export const getProducts=() =>
+    [
         {
           id: 1,
           name: "Gaming Laptop",
@@ -74,7 +73,3 @@ export const useProduct = () => {
           categories: ["Peripherals", "Printers"],
         },
       ];
-      return {products}
-}
-
-

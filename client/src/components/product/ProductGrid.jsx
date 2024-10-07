@@ -1,4 +1,4 @@
-import { useProduct } from "../../hooks";
+import { useProduct } from "../../api/queries";
 import ProductCard from "./ProductCard";
 
 export const ProductGrid = () => {
