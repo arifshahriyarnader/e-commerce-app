@@ -5,8 +5,11 @@ import ProductCard from "./ProductCard";
 export const ProductGrid = () => {
   const [products, setProducts] = useState([])
   useEffect(() => {
-    fetch('http://localhost:5000/api/products').then((res) => res.json()).then((data) =>{
-      setProducts(data);
+    fetch('http://localhost:5000/api/products').then((res) => res.json())
+    .then((data) => setProducts(data))
+    .catch((err) => {
+      alert("Failed to load products")
+      console.error(err)
     })
   }, [])
   //const {products} = useProduct();
