@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
+import axios from 'axios';
 //import { useProduct } from "../../api/queries";
 import ProductCard from "./ProductCard";
 
 export const ProductGrid = () => {
   const [products, setProducts] = useState([])
   useEffect(() => {
-    fetch('http://localhost:5000/api/products').then((res) => res.json())
-    .then((data) => setProducts(data))
-    .catch((err) => {
-      alert("Failed to load products")
-      console.error(err)
+    axios.get('http://localhost:5000/api/products').then((res) => {
+      setProducts(res.data)
+    })
+    .catch((err) =>{
+      alert('Failed to load products')
+      console.error('Error Fetching products:', err);
     })
   }, [])
   //const {products} = useProduct();
