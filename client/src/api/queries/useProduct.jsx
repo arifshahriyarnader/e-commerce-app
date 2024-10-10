@@ -5,8 +5,14 @@ export const useProduct = () => {
   const [products, setProducts] = useState([])
 
   const loadProducts = async() =>{
-    const products= await productServices.getProducts();
-    setProducts(products);
+    try{
+      const products= await productServices.getProducts();
+      setProducts(products);
+    }
+    catch(err){
+      alert("Failed to load products")
+      console.log(err)
+    }
   }
   useEffect(() => {
     loadProducts()
