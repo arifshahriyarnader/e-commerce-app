@@ -1,17 +1,15 @@
-import axios from "axios";
 import { useEffect, useState } from "react"
-//import { productServices } from "../services"
+import { productServices } from "../services"
 
 export const useProduct = () => {
   const [products, setProducts] = useState([])
+
+  const loadProducts = async() =>{
+    const products= await productServices.getProducts();
+    setProducts(products);
+  }
   useEffect(() => {
-    axios.get('http://localhost:5000/api/products').then((res) =>{
-      setProducts(res.data);
-    })
-    .catch((err) =>{
-      alert('Failed to load Products')
-      console.error('Error Fetching products:', err);
-    })
+    loadProducts()
   }, [])
       return {products}
 }
