@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { useProduct } from "../../api/queries/useProduct";
 import ProductCard from "./ProductCard";
 
@@ -5,12 +6,12 @@ export const ProductGrid = () => {
   
    const {isLoading,products} =useProduct();
   return (
-    <div className="p-8 grid grid-cols-3 gap-4">
+    <Box  sx={{display:"flex", flexWrap:"wrap", gap:2, margin:4}}>
       {isLoading ? <h1>Loading....</h1> : products.map((product, index) => {
         return <ProductCard key={index} product={product} />;
       })}
      
-    </div>
+    </Box>
   );
 };
 

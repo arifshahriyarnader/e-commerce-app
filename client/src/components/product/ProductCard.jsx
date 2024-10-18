@@ -11,9 +11,9 @@ const ProductCard = ({ product }) => {
 
   return (
     <Card>
-      <CardMedia sx={{ height: 300, width:300 }} image={product.image} />
+      <CardMedia sx={{ height:300, width:320 }} image={product.image} />
       <CardContent>
-      <Box sx={{display:'flex', justifyContent:'space-between'}}>
+      <Box sx={{display:"flex", justifyContent:'space-between'}}>
         <Typography variant="h5">{product.name}</Typography>
         <Typography variant="h5">{`$${product.price}`}</Typography> 
       </Box>

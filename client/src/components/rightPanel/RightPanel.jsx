@@ -1,18 +1,19 @@
+import { Box, Button, Stack, Typography } from "@mui/material"
 import { Cart } from "./cart/Cart"
+import { useContext } from "react"
+import { CartContext } from "../../contexts"
 
 export const RightPanel=() =>{
-  
+  const {cart} =useContext(CartContext)
     return (
-      <div className="lg:w-1/4 lg:ml-8">
-        <div className="mb-8">
-      <h1 className="text-xl font-semibold mb-2">Cart</h1>
-      <Cart />
-      </div>
-      <div>
-      <button className="bg-blue-500 hover:bg-blue-700
-                 text-white font-bold py-2 px-4
-                  rounded mt-4">Checkout</button>
-      </div>
-    </div>
+    <Stack>
+      <Typography variant="h6">Cart</Typography>
+      <Box>
+        <Cart />
+        </Box>
+      <Box sx={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:2}}>
+      <Button variant="contained" disabled={!cart.length}>Checkout</Button>
+      </Box>
+    </Stack>
     )
   }
