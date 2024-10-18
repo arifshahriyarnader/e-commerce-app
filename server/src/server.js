@@ -79,7 +79,7 @@ let products = [
         name: "All-in-One Printer",
         price: 150,
         image:
-          "https://www.startech.com.bd/image/cache/catalog/printer/g-printer/gp-c80180ii/gp-c80180ii-01-500x500.webp",
+          "https://www.startech.com.bd/image/cache/catalog/printer/pantum/p2500/pantum-p2500-01-500x500.webp",
         categories: ["Peripherals", "Printers"],
       },
 ];
