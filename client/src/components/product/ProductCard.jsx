@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../../contexts";
-import {Box, Button, Card, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import {Box, Button, Card, CardActions, CardContent, CardMedia, Typography} from "../../common/components";
+import {AddShoppingCartIcon} from '../../common/icons';
 
 const ProductCard = ({ product }) => {
   const { addProductToCart } = useContext(CartContext);
