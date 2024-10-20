@@ -7,7 +7,7 @@ export const RightPanel=() =>{
   const {cart} =useContext(CartContext)
     return (
     <Stack>
-      <Typography variant="h6">Cart</Typography>
+      <Typography variant="h6" textAlign="center">Cart</Typography>
       <Box>
         <Cart />
         </Box>
