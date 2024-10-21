@@ -11,7 +11,7 @@ export const RightPanel=() =>{
       <Box>
         <Cart />
         </Box>
-      <Box sx={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:2}}>
+      <Box sx={{display:"flex", justifyContent:"center", alignItems:"center", marginTop:8}}>
       <Button variant="contained" disabled={!cart.length}>Checkout</Button>
       </Box>
     </Stack>
