@@ -12,7 +12,7 @@ export const FilterSection = () => {
     "Printers",
   ];
   return (
-    <Box>
+    <Box paddingTop={4}>
       {categories.map((category, index) => {
         return (
           <Button

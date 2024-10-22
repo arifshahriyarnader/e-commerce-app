@@ -13,7 +13,8 @@ import {
   ListItemAvatar,
   Avatar,
   IconButton,
-  AppBar
+  AppBar,
+  Toolbar,
 } from "@mui/material";
 
 export {
@@ -31,5 +32,6 @@ export {
   ListItemAvatar,
   Avatar,
   IconButton,
-  AppBar
+  AppBar,
+  Toolbar,
 };
