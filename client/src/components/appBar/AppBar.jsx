@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { Box, Button, IconButton, AppBar as MuiAppBar, Toolbar, Typography } from "../../common/components";
-import { ShoppingCartIcon } from "../../common/icons";
+import { Box, Button, AppBar as MuiAppBar, Toolbar, Typography } from "../../common/components";
+import { CartMenu } from "./CartMenu";
 
 export const AppBar = () => {
   return (
-    <MuiAppBar position="static">
-      <Toolbar>
+    <MuiAppBar>
+      <Toolbar sx={{ position: "static" }}>
       <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
         React E-Commerce App
       </Typography>
@@ -13,9 +13,7 @@ export const AppBar = () => {
     <Button color="inherit" component={Link} to="/contact">Contact</Button>
       
       <Box>
-        <IconButton color="inherit">
-          <ShoppingCartIcon />
-        </IconButton>
+        <CartMenu />
       </Box>
       </Toolbar>
     </MuiAppBar>

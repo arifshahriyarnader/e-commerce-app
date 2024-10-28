@@ -1,4 +1,5 @@
-import {IconButton, ListItemText } from "@mui/material";
+
+import { IconButton, ListItemText } from "../../../common/components";
 import { DeleteIcon } from "../../../common/icons";
 
 const CartItem = ({ cartItem, productRemoveFromCart }) => {

@@ -1,4 +1,4 @@
-export * from './leftPanel/LeftPanel';
-export * from './rightPanel/RightPanel';
+export * from './leftPanel/FilterSection';
+export * from './product/ProductGrid';
 export  * from './appBar/AppBar';
 export * from './Footer/Footer'

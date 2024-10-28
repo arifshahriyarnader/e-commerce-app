@@ -15,6 +15,8 @@ import {
   IconButton,
   AppBar,
   Toolbar,
+  Drawer,
+  Badge,
 } from "@mui/material";
 
 export {
@@ -34,4 +36,6 @@ export {
   IconButton,
   AppBar,
   Toolbar,
+  Drawer,
+  Badge,
 };

@@ -4,7 +4,7 @@ import { Container, TextField, Button, Typography, Box } from "@mui/material";
 export const Contact = () => {
   return (
     <Container maxWidth="sm" sx={{ mt: 5 }}>
-      <Typography variant="h4" component="h1" gutterBottom textAlign="center">
+      <Typography variant="h4" component="h1" gutterBottom textAlign="center" paddingTop={4}>
         Contact Us
       </Typography>
       <Box
