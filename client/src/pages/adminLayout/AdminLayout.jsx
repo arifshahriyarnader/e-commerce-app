@@ -9,6 +9,7 @@ export const AdminLayout = () => {
     <Button color="inherit" component={Link} to="/admin">Dashboard</Button>
     <Button color="inherit" component={Link} to="/admin/inventory">Inventory</Button>
     <Button color="inherit" component={Link} to="/admin/add-products">Add Products</Button>
+    <Button color="inherit" component={Link} to="/admin/admin-profile">Profile</Button>
     <Outlet />
    </Stack>
   )
