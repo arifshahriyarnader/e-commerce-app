@@ -1,15 +1,18 @@
-import { Button, Stack, Typography } from '@mui/material'
+import { Box, Button, ButtonGroup, Stack, Typography } from '../../common/components';
 import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 export const AdminLayout = () => {
   return (
-   <Stack>
-    <Typography variant='h6'>Welcome Admin!</Typography>
+   <Stack width={1} px={8} spacing={2}>
+    <Typography variant='h5' paddingTop={12}>Welcome Admin!</Typography>
+    <Box>
+      <ButtonGroup>
     <Button color="inherit" component={Link} to="/admin">Dashboard</Button>
     <Button color="inherit" component={Link} to="/admin/inventory">Inventory</Button>
-    <Button color="inherit" component={Link} to="/admin/add-products">Add Products</Button>
     <Button color="inherit" component={Link} to="/admin/admin-profile">Profile</Button>
+      </ButtonGroup>
+    </Box>
     <Outlet />
    </Stack>
   )
