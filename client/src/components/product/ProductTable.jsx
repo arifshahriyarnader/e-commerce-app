@@ -1,6 +1,8 @@
-import { Box, Table, } from '../../common/components';
+import { useProduct } from '../../api/queries';
+import { Box, Table, TableEmptyState, } from '../../common/components';
 
 export const ProductTable = () => {
+  const {isLoading, products} = useProduct();
   return (
     <Box py={4}>
      <Table columns={[
@@ -21,7 +23,12 @@ export const ProductTable = () => {
       width:150,
       type:'number'
     },
-     ]} rows={[]} />
+     ]} rows={[]} loading={isLoading}
+     slots={{
+      noRowsOverlay:() => <TableEmptyState />,
+     }}
+     sx={{
+      minHeight:400,}} />
     </Box>
   )
 }

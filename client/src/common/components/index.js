@@ -20,10 +20,12 @@ import {
   Badge,
   Menu,
   MenuItem,
-  MenuList
+  MenuList,
+  LinearProgress,
+  CircularProgress,
 } from "@mui/material";
 import { DataGrid } from '@mui/x-data-grid';
-
+export * from './TableEmptyState';
 export {
   Box,
   Button,
@@ -47,5 +49,7 @@ export {
   Menu,
   MenuItem,
   MenuList,
-  DataGrid as Table
+  DataGrid as Table,
+  LinearProgress,
+  CircularProgress,
 };
