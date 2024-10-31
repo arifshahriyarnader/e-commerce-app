@@ -22,6 +22,7 @@ import {
   MenuItem,
   MenuList
 } from "@mui/material";
+import { DataGrid } from '@mui/x-data-grid';
 
 export {
   Box,
@@ -46,4 +47,5 @@ export {
   Menu,
   MenuItem,
   MenuList,
+  DataGrid as Table
 };
