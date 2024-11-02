@@ -17,6 +17,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/laptop/lenovo/ideapad-gaming-3/ideapad-gaming-3-001-228x228.jpg",
         categories: ["Laptops", "Gaming"],
+        quantity:10,
       },
       {
         id: 2,
@@ -25,6 +26,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/mouse/zoook/clique/clique-01-500x500.jpg",
         categories: ["Accessories", "Peripherals"],
+        quantity:10,
       },
       {
         id: 3,
@@ -33,6 +35,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/keyboard/meetion/mt-k9320/mt-k9320-01-500x500.jpg",
         categories: ["Accessories", "Peripherals"],
+        quantity:10,
       },
       {
         id: 4,
@@ -41,6 +44,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/portable-hdd%20/lacie/10tb-d2-professional/lacie-10tb-d2-professional-01-500x500.jpg",
         categories: ["Storage", "Accessories"],
+        quantity:10,
       },
       {
         id: 5,
@@ -49,6 +53,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/graphics-card/colorful/geforce-gt710-2gd3/geforce-gt710-2gd3-1-500x500.jpg",
         categories: ["Components", "Gaming"],
+        quantity:10,
       },
       {
         id: 6,
@@ -57,6 +62,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/ssd/colorful/sl500/sl500-500x500.JPG",
         categories: ["Storage", "Accessories"],
+        quantity:10,
       },
       {
         id: 7,
@@ -65,6 +71,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/monitor/gigabyte/gs32q/gs32q-01-500x500.webp",
         categories: ["Monitors", "Gaming"],
+        quantity:10,
       },
       {
         id: 8,
@@ -73,6 +80,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/headphone/wiwu/elite/elite-01-500x500.webp",
         categories: ["Accessories", "Peripherals"],
+        quantity:15,
       },
       {
         id: 9,
@@ -81,6 +89,7 @@ let products = [
         image:
           "https://www.startech.com.bd/image/cache/catalog/printer/pantum/p2500/pantum-p2500-01-500x500.webp",
         categories: ["Peripherals", "Printers"],
+        quantity:5
       },
 ];
 
