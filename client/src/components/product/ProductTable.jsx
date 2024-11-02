@@ -1,12 +1,25 @@
+import { Box, Button, Table, TableEmptyState } from "../../common/components";
 import { useProduct } from "../../api/queries";
-import { Box, Table, TableEmptyState } from "../../common/components";
+import { DeleteIcon, EditIcon } from "../../common/icons";
+
+const ProductRowActions = ({ row }) => {
+  return (
+    <Box>
+      <Button size="small" startIcon={<EditIcon />}>Edit</Button>
+      <Button color="error" size="small" endIcon={<DeleteIcon />}>
+        Delete
+      </Button>
+    </Box>
+  );
+};
 
 export const ProductTable = () => {
   const { isLoading, products } = useProduct();
 
   const getFormattedRows = () =>
-    products.map((product) => ({
+    products.map((product,index) => ({
       id: product.id,
+      serial:index+1,
       name: product.name,
       price: product.price,
       quantity: product.quantity,
@@ -16,6 +29,13 @@ export const ProductTable = () => {
     <Box py={4}>
       <Table
         columns={[
+          {
+            field:"serial",
+            headerName:"Serial",
+            width:100,
+            headerAlign:"center",
+            align:"center"
+          },
           {
             field: "name",
             headerName: "Product Name",
@@ -35,6 +55,13 @@ export const ProductTable = () => {
             headerAlign: "center",
             width: 150,
             type: "number",
+          },
+          {
+            field: "actions",
+            align: "center",
+            headerName: "",
+            minWidth: 200,
+            renderCell: () => <ProductRowActions />,
           },
         ]}
         rows={getFormattedRows()}
