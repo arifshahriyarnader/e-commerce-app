@@ -33,7 +33,11 @@ export const ProductTable = () => {
       width:150,
       type:'number'
     },
-     ]} rows={getFormattedRows()} loading={isLoading}
+     ]} rows={getFormattedRows()} loading={isLoading} paginationMode='client'
+     initialState={{
+      pagination:{paginationModel: {pageSize: 5}},
+     }}
+     pageSizeOptions={[5,10,15]}
      slots={{
       noRowsOverlay:() => <TableEmptyState />,
      }}
