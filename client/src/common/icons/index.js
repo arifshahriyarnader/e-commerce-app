@@ -4,6 +4,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import EditIcon from '@mui/icons-material/Edit';
+import SettingsIcon from '@mui/icons-material/Settings';
 export {
   AddShoppingCartIcon,
   ImageIcon,
@@ -11,4 +12,5 @@ export {
   ShoppingCartIcon,
   InfoOutlinedIcon,
   EditIcon,
+  SettingsIcon
 };

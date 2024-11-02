@@ -1,6 +1,6 @@
 import { Box, Button, Table, TableEmptyState } from "../../common/components";
 import { useProduct } from "../../api/queries";
-import { DeleteIcon, EditIcon } from "../../common/icons";
+import { DeleteIcon, EditIcon, SettingsIcon } from "../../common/icons";
 
 const ProductRowActions = ({ row }) => {
   return (
@@ -59,9 +59,11 @@ export const ProductTable = () => {
           {
             field: "actions",
             align: "center",
-            headerName: "",
+            headerAlign:"center",
             minWidth: 200,
             renderCell: () => <ProductRowActions />,
+            renderHeader: () => <SettingsIcon />,
+            sortable:false,
           },
         ]}
         rows={getFormattedRows()}
@@ -76,6 +78,9 @@ export const ProductTable = () => {
         }}
         sx={{
           minHeight: 400,
+          '& .MuiDataGrid-columnHeaderTitle':{
+            fontWeight:700
+          },
         }}
       />
     </Box>
