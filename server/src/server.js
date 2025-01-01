@@ -1,12 +1,16 @@
+require("dotenv").config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const connectDB=require('../config/db')
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT =5000;
 
 app.use(bodyParser.json());
+
 app.use(cors());
+connectDB();
 
 // In-memory array to store products
 let products = [
