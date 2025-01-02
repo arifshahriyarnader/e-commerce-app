@@ -110,7 +110,7 @@ app.get('/api/products', (req, res) => {
     filters = category.map((category) => category.toLowerCase());
   }
   if (!filters.length) {
-    res.json(products);
+   return res.json(products);
   }
   res.json(
     products.filter((product) =>
@@ -194,6 +194,8 @@ app.get('/api/search', (req, res) => {
 
   res.json(filteredProducts);
 });
+
+app.use('/api/users', require('./routes/api/user'));
 
 // Start the server
 app.listen(appConfig.PORT, () => {

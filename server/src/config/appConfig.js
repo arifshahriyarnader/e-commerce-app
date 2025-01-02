@@ -5,6 +5,9 @@ const appConfig={
     ALLOWED_ORIGIN:process.env.ALLOWED_ORIGIN,
     DB:{
         MONGODB_URI:process.env.MONGODB_URI
+    },
+    AUTH:{
+        JWT_SECRET:process.env.JWT_SECRET
     }
 }
 
