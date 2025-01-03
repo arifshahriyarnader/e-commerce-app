@@ -4,6 +4,7 @@ import { CartMenu } from "./CartMenu";
 import { ProfileMenu } from "./ProfileMenu";
 
 export const AppBar = () => {
+  //const isUserLoggedin=false;
   return (
     <MuiAppBar>
       <Toolbar sx={{ position: "static" }}>
@@ -15,6 +16,7 @@ export const AppBar = () => {
       
       <Box display="flex" gap={4}>
         <CartMenu />
+        {/* {isUserLoggedin ? } */}
         <ProfileMenu />
       </Box>
       </Toolbar>

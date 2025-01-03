@@ -105,9 +105,9 @@ app.get('/api/products', (req, res) => {
   const { category } = req.query;
   let filters = [];
   if (typeof category === 'string') {
-    filters = [category.toLowerCase()];
+    return filters = [category.toLowerCase()];
   } else if (Array.isArray(category) && category.length) {
-    filters = category.map((category) => category.toLowerCase());
+    return filters = category.map((category) => category.toLowerCase());
   }
   if (!filters.length) {
    return res.json(products);
